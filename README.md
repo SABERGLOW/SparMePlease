@@ -28,4 +28,4 @@ The Shopping List can display:
 - name of the item
 - additional attributes can also be displayed of course!
 
-_All the image/icon assets are included in the <a href="https://github.com/SABERGLOW/SparMePlease/Assets"> Assets </a> folder_
+_All the image/icon assets are included in the <a href="https://github.com/SABERGLOW/SparMePlease/tree/main/Assets"> Assets </a> folder_
