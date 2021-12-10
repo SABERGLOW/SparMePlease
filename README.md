@@ -12,7 +12,8 @@ This is a pretty little android application written in Kotlin which will help yo
 # Installation
 
 If you wish to compile and run the application, just import the whole project in Android Studio and build it.
-Alternatively, you can download and install "app-debug.apk" on your android device.
+
+Alternatively, you can download and install <a href="https://github.com/SABERGLOW/SparMePlease/blob/main/APK/app-debug.apk"> app-debug.apk </a> on your android device.
 
 # Features
 The application implements:
