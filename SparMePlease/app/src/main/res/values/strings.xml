@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">sparmeplease</string>
+    <string-array name="categories">
+        <item>Game</item>
+        <item>Food</item>
+        <item>Drink</item>
+        <item>Book</item>
+        <item>Miscellaneous</item>
+    </string-array>
+</resources>

@@ -1,0 +1,6 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.sparmeplease" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+    </style>
+</resources>

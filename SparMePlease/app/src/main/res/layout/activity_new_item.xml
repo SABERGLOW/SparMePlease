@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/ItemRow"
+    tools:context=".NewItemActivity"
+    android:background="@drawable/gradient_background">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarNewItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#262833"
+        app:theme="@style/ToolBarStyle"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/etItemName"
+            android:hint="Item name"
+            android:background="#80262833"
+            android:layout_width="match_parent"
+            android:textColor="@color/backgroundColor"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#262833"
+            android:text="Item type:"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp">
+
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:popupBackground="#80262833"
+            android:theme="@style/AddItem"
+            android:visibility="visible" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp">
+
+        <EditText
+            android:id="@+id/etPrice"
+            android:hint="Estimated price"
+            android:background="#80262833"
+            android:layout_width="match_parent"
+            android:textColor="@color/backgroundColor"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp">
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:hint="Item description"
+            android:background="#80262833"
+            android:layout_width="match_parent"
+            android:textColor="@color/backgroundColor"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/cbStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#262833"
+        android:buttonTint="#262833"
+        android:text="Already purchased" />
+
+    <Button
+        android:id="@+id/btnAddItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:text="Add Item"
+        android:textColor="#FF009688"/>
+
+
+</LinearLayout>

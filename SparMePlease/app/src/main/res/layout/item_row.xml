@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:theme="@style/ItemRow"
+    card_view:cardBackgroundColor="@color/colorPrimary"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="4dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivIcon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/btnDelete"
+                    android:layout_toEndOf="@+id/ivIcon"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/itemName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/itemPrice"
+                        android:textColor="#262833"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/itemPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/itemName"
+                        android:textColor="#262833"
+                        android:textSize="15sp"
+                        android:textStyle="italic" />
+
+                    <CheckBox
+                        android:id="@+id/cbDone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Purchased"
+                        android:textColor="#262833"
+                        android:buttonTint="#FF009688"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:text="Delete"
+                    android:textColor="#FF009688" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View Item Details"
+                android:textColor="#FF009688"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
